@@ -1,2 +1,0 @@
-# E.-Kruger-Resume
-Resume
