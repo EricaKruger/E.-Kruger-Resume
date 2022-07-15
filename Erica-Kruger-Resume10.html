@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<meta content="width=device-width">
+<meta name= "viewport" content="width=device-width, initial-scale=1">
 <html> 
     <head>
 
         <title> Erica-Kruger-Resume</title> <!-- Name of webpage/tab -->
         
-    <link rel="Stylesheet" href="style/resumeStylesheet.css">  <!-- Link Stylesheet -->
+    <link rel="Stylesheet" href="style/resumeStylesheet.css">
+      <!-- Link Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
+    <!-- Link bootstrap -->
 </head>
 
     <body>
@@ -29,16 +30,14 @@
         </header>
 
         <article id="sideMenu"> <!-- Sidebar for easy navigation throughout webpage --> 
-
-            
             <h3 class="text-center"> Page&nbspIndex</h3>
-             <nav>
+             <nav class="pagination">
              <ul>
-                 <li><a href="#personalInformation"> Personal information</a></li>
-                 <li><a href="#education/Qualifications">Education/Qualifications</a></li>
-                 <li><a href="#experience">Experience</a></li>
-                 <li><a href="#skillsAndHobbies">Skills And Hobbies</a></li>
-                 <li><a href="#contactDetails">Contact&nbsp;Details</a></li>
+                 <li class="page-item"> <a href="#personalInformation"> Personal information</a></li>
+                 <li class="page-item"> <a href="#education/Qualifications">Education/Qualifications</a></li>
+                 <li class="page-item"><a href="#experience">Experience</a></li>
+                 <li class="page-item"><a href="#skillsAndHobbies">Skills And Hobbies</a></li>
+                 <li class="page-item"><a href="#contactDetails">Contact&nbsp;Details</a></li>
              </ul>
              </nav>
         </article>   
@@ -49,38 +48,25 @@
         <section id= "personalInformation">   <!-- EXTRA ... About -->
 
             <div class="container">
-                <h2 class="headerB text-center">
-                                                
+                <h2 class="headerB text-center">                             
                    <i> Personal&nbspInformation</i>
                 </h2>
              
 
-            <p>
-                Surname: Kruger <br>
-
-                Name: Erica <br>
-
-                Date of birth:  22 June 1999 <br>
-
-                Marital status: Single <br>
-
-                Dependants:  None <br>
-
-                Drivers license:  Code B (Have own transport) <br>
-
-                Gender:  Female <br>
-
-                Residential Adress: Morningside Farm, Koster <br>
-
-                Contact number:  *** *** 4314 <br> 
-
-                Language: Afrikaans & English (read, write and speak) <br>
-
-                Nationality:  South African <br>
-        
-                Health:  Excellent <br>
-                
-            </p>
+            <ul class="list-unstyled">
+                <li> Surname: Kruger</li>
+                <li> Name: Erica</li>
+                <li> Date of birth:  22 June 1999</li>
+                <li>Marital status: Single</li>
+                <li> Dependants:  None</li>
+                <li>Drivers license:  Code B (Have own transport)</li>
+                <li> Gender:  Female</li>
+                <li>Residential Adress: Morningside Farm, Koster</li>
+                <li>Contact number:  *** *** 4314</li>
+                <li>Language: Afrikaans & English (read, write and speak)</li>
+                <li>Nationality:  South African</li>
+                <li>Health:  Excellent</li>
+            </ul>
             </div>
         </section>
 
@@ -222,6 +208,11 @@
 <!-- Email address and subject -->
     </article>
 
+  <section class="pull-right">
+     <button type="button"><a class="button btn-secondary" 
+    href="mailto: ericakruger600@gmail.com? subject = Received Resume = message">
+    Received</a></button>
+    </section> 
 </footer>
 
     </body>

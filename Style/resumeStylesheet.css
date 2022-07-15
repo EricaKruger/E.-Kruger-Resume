@@ -40,11 +40,12 @@ body{  /* Content to display more clearly */
     
 
 .headerA{
-    font-size: 25px !important;
+    font-size: 29px !important;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: bold;
     color: brown;
-    height: 3mm;}
+    height: 6mm;
+    }
     
 .headerB{ 
     font-size: 150%;
@@ -56,6 +57,11 @@ body{  /* Content to display more clearly */
     width: 80px;
     padding-bottom: 5%;
     line-break: auto;}
+
+    h3{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
     
 .websiteStyle{ 
     /* Websites to appear different than text content */
@@ -81,7 +87,12 @@ section { /* Visibly acknowlage each section of content provided */
     padding-bottom: 5px;
 }
 
-
+button {
+    color: aliceblue;
+    background-color: darkslategray;
+    bottom: 0;
+    
+}
 /* styling for different screen size */
 @media screen and (max-width : 409px) {   
     
