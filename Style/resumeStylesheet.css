@@ -1,10 +1,11 @@
 body{  /* Content to display more clearly */
-    background-color: #d6d1d213;
+    background-color: wheat;    
     }
-   
 
-    main{  /* Seperate content from other semantic elements */
+    main{  
+        /* Seperate content from other semantic elements */
         padding-left: 7%;
+        padding-top: 20px;
         padding-right: 2%;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
@@ -12,40 +13,43 @@ body{  /* Content to display more clearly */
         border-width: 5px;
         border-left-width: 280px;
         border-right-width: 30px;
-        border-color: rgb(156, 53, 69);
+        border-color:rgba(165, 42, 42, 0.423);
         border-radius: 10px 20px 30px 30px;
-    }
-        
+        background-color: wheat;
+        background-image: url(../Images/scroll.jpg);
+        background-size: cover;
+        z-index: 1;
+    }     
 
-    #sideMenu{ /* Styling for Side-Navigation bar */
+    #sideMenu{ 
+        /* Styling for Side-Navigation bar */
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: larger;
-        position: fixed;
+        position: sticky;
         display: flexbox;
         flex-direction: row;
         border-color: black;
-        background-color: rgb(106, 104, 104);
+        background-color: rgba(165, 42, 42, 0.571)!important;
         border-style: solid;
         border-width: 5%; 
-        float:inline-start;
-        width: 260px;
-        text-align: left;
-        height: 35%;
-        margin-left: 15px;
-        margin-block-end: 75%;
-    }
+        width: 275px;
+        height: 30%;
+        top: 0;
+        float: left; 
+    } 
     
 
 .headerA{
-    font-size: 50px !important;
+    font-size: 25px !important;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: bold;
-    color: black;
+    color: brown;
     height: 3mm;}
     
 .headerB{ 
     font-size: 150%;
-    font-style:italic underline;
+    font-style: italic;
+    font-weight: 5px !important; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(32, 2, 2);
     height :1mm ;
@@ -53,7 +57,8 @@ body{  /* Content to display more clearly */
     padding-bottom: 5%;
     line-break: auto;}
     
-.websiteStyle{ /* Websites to appear different than text content */
+.websiteStyle{ 
+    /* Websites to appear different than text content */
     color: green;
     font-style: italic;}
  
@@ -73,14 +78,41 @@ a{
 }
 
 section { /* Visibly acknowlage each section of content provided */
-    padding-bottom: 4px;
-    background-color: rgba(211, 211, 211, 0.358);
+    padding-bottom: 5px;
 }
 
 
+/* styling for different screen size */
+@media screen and (max-width : 409px) {   
+    
+     div {
+        border-style: double;
+        border-width: 1px;
+        font-size: smaller;};
+       .headerB {text-align: left;}
+       
+}
+
+@media screen and (max-width : 949px) {
+    div {
+       text-transform: capitalize;
+       font-size: large;};
+       .headerB {text-align: left;}
+       
+    }
+
+@media screen and (min-width : 950px) {
+    div {
+       border-style:hidden;
+       text-shadow: 2px;
+    }
+    
+}
+
 header{ 
-    padding-top: 5px;
-    background-color: rgba(138, 3, 53, 0.704) !important;
+    /* Top styling */
+    padding-top: 4px;
+    background-color: rgba(80, 35, 3, 0.411)!important;
     padding-bottom: 8px;
     border: black;
     border-style: double;
@@ -88,16 +120,19 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#photographOfMe { /* Styling for Headshot */
+#photographOfMe { 
+    /* Styling for Headshot */
     background-color: black;
-    width: 100%;
-    height: 100%;
+    min-height: 99%;
+    min-width: 99%;
+    border: 100%;
 }
 
 
 footer{
+    /* Styling bottom */
     padding-top: 5px;
-    background-color: rgba(138, 3, 53, 0.704) !important;
+    background-color: rgba(80, 35, 3, 0.411)!important;
     padding-bottom: 4px;
     border: black;
     border-style: double;
@@ -107,14 +142,12 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     text-align: center !important;
-    font-size: larger;
+    font-size: larger; 
 }
 
 
-
-
 @keyframes iconanimate { 
-     
+     /* animate icons */
     0% {transform: rotateX (0deg);
         background-color: black;}
     25% {transform: rotateY(90deg);
@@ -128,8 +161,8 @@ footer{
     
     } 
 
-.icons{ /* Styling icon appearance */
-    
+.icons{ 
+    /* Styling icon appearance */
     border-radius: 45%;
     width: 40px;
     height: 40px;
@@ -140,7 +173,6 @@ footer{
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    
 }
 
 

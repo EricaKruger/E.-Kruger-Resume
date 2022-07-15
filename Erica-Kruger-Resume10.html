@@ -1,60 +1,59 @@
 <!DOCTYPE html>
+<meta content="width=device-width">
 <html> 
     <head>
+
         <title> Erica-Kruger-Resume</title> <!-- Name of webpage/tab -->
         
     <link rel="Stylesheet" href="style/resumeStylesheet.css">  <!-- Link Stylesheet -->
-
-    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+</head>
 
     <body>
 
-        <header> <!-- State what the webpage is about -->
-            <center>
+        <header class="text-center"> <!-- State what the webpage is about -->
+            
                 <div>
-                    <p> <b> The full Curriculum Vitae / Resume of</b></p>
-                </div>
-                <div>
+                    <p> <b> The full Curriculum Vitae / Resume of
+                    <h1 class="headerA">Erica&nbspKruger </h1> </b> </p>
+                   </div>
+                <div >
                     <picture id="photographOfMe">
-                        <source media="(max-width: 409px)" srcset="Images/Erica-small.jpg" width="70%">
-                        <source media="(max-width: 949px)" srcset="Images/Erica-med.jpg" width="70%">
-                        <img src="Images/Erica-Large.jpg" alt="Photograph of Erica Kruger" width="70%" >
+                        <source media="(max-width: 409px)" srcset="Images/Erica-small.jpg" width="90%">
+                        <source media="(max-width: 949px)" srcset="Images/Erica-med.jpg" width="90%">
+                        <img src="Images/Erica-Large.jpg" alt="Photograph of Erica Kruger" width="90%" >
                     </picture>
                 </div>
-               <div>
-                <h1 class="headerA">Erica&nbspKruger </h1>
-               </div>
-                          
-             </center>
 
         </header>
 
         <article id="sideMenu"> <!-- Sidebar for easy navigation throughout webpage --> 
 
             
-           <center> <h3>Page&nbspIndex</h3></center>
-            <nav>
-            <ul>
-                <li><a href="#personalInformation"> Personal information</a></li>
-                <li><a href="#education/Qualifications">Education/Qualifications</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skillsAndHobbies">Skills And Hobbies</a></li>
-                <li><a href="#contactDetails">Contact&nbsp;Details</a></li>
-            </ul>
-            </nav>
-        </article>
+            <h3 class="text-center"> Page&nbspIndex</h3>
+             <nav>
+             <ul>
+                 <li><a href="#personalInformation"> Personal information</a></li>
+                 <li><a href="#education/Qualifications">Education/Qualifications</a></li>
+                 <li><a href="#experience">Experience</a></li>
+                 <li><a href="#skillsAndHobbies">Skills And Hobbies</a></li>
+                 <li><a href="#contactDetails">Contact&nbsp;Details</a></li>
+             </ul>
+             </nav>
+        </article>   
 
     
-    <main>   
+    <main>  
 
         <section id= "personalInformation">   <!-- EXTRA ... About -->
 
-            <div>
-                <center><h2 class="headerB">
+            <div class="container">
+                <h2 class="headerB text-center">
                                                 
                    <i> Personal&nbspInformation</i>
                 </h2>
-                </center>
+             
 
             <p>
                 Surname: Kruger <br>
@@ -87,14 +86,14 @@
 
         <section id="education/Qualifications"> <!-- Education and Qualifications aquired -->
         
-          <center> 
-            <h3 class="headerB">
+          
+            <h3 class="headerB text-center">
                 Education/Qualifications
             </h3>
-          </center> 
+         
     <p>
          <ol>
-            <div>
+            <div class="container-fluid">
        
          <li><u>Highshool: <a class="websiteStyle" target="_blank" href="http://vgim.co.za">Vereeniging Gimnasium</a> </u> </li>
          <p> <b> Year </b>: 2013 - 2017 <br>
@@ -113,7 +112,7 @@
         </p>
             </div>
 
-    <div>
+    <div class="container-fluid">
 
          <li>College <a class="websiteStyle" target="_blank" href="http://www.intec.edu.za/">Intec&nbsp;College</a></li>
     <p> <b> Year </b>: 2018 - 2019 <br>
@@ -138,11 +137,11 @@
         </section>
                       
 <section id="experience">  <!-- Working Experience -->
-   <center> 
-    <h2 class="headerB">
+   
+    <h2 class="headerB text-center">
    Experience
     </h2>
-   </center>
+  
 
     <p><h3>Job 1 : Waitress at <a class="websiteStyle" target="_blank" href="http://www.biekiebos.co.za/">Biekie Bos Fucnction Venue</a></h3>
 <p> <b>Year : </b>November 2016 - October 2017 (weekends and school holidays)</p>
@@ -195,10 +194,10 @@
 
 <section  id="skillsAndHobbies">   <!-- Interests, Qualities, Traits -->
   
-<center> <h2 class="headerB">
+ <h2 class="headerB text-center">
             Skills&nbspand&nbspHobbies
         </h2>
-</center>
+
 
 <ul>
     <li>Computers and coding/programming.</li>
@@ -215,14 +214,14 @@
 <footer id="contactDetails"> <!-- How to find/contact -->
     
 <p>  Contact&nbspDetails</p>
-<center>
-    <article>
+
+    <article class="container-fluid">
 <a  target="_blank" href="https://www.facebook.com/erica.kruger.92" ><img class="icons" src="Images/facebook.jpg" alt="fb"></a>
 <!-- Facebook page --> 
 <a  target="_blank" href="mailto: ericakruger600@gmail.com? subject = Feedback regarding application = message"><img class="icons" src= "Images/gmail.png" alt="gmail"></a>
 <!-- Email address and subject -->
     </article>
-</center> 
+
 </footer>
 
     </body>
