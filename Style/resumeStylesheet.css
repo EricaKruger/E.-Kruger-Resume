@@ -1,25 +1,32 @@
-body{  /* Content to display more clearly */
-    background-color: wheat;    
+    body{  /* Content to display more clearly */
+    background-color: wheat;
+    margin: auto;
+    }
+
+
+    section{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     main{  
         /* Seperate content from other semantic elements */
-        padding-left: 7%;
+        color: cornsilk;
         padding-top: 20px;
-        padding-right: 2%;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
         border-style: solid;
         border-width: 5px;
-        border-left-width: 280px;
-        border-right-width: 30px;
+        border-left-width: 261px;
+        border-right-width: 35px;
         border-color:rgba(165, 42, 42, 0.423);
         border-radius: 10px 20px 30px 30px;
         background-color: wheat;
         background-image: url(../Images/scroll.jpg);
+        background-position: 100%;
         background-size: cover;
         z-index: 1;
-    }     
+        }     
 
     #sideMenu{ 
         /* Styling for Side-Navigation bar */
@@ -32,35 +39,50 @@ body{  /* Content to display more clearly */
         background-color: rgba(165, 42, 42, 0.571)!important;
         border-style: solid;
         border-width: 5%; 
-        width: 275px;
+        width: 260px;
         height: 30%;
         top: 0;
-        float: left; 
+        float:left; 
     } 
     
 
 .headerA{
+    text-align: center;
     font-size: 29px !important;
+    padding-bottom: 4px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: bold;
     color: brown;
     height: 6mm;
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
     }
     
 .headerB{ 
+    text-align: center  !important;
+    padding-left: 25%;
+    padding-bottom: 10px;
+    text-decoration:underline;
     font-size: 150%;
     font-style: italic;
-    font-weight: 5px !important; 
+    font-weight: 20px !important; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(32, 2, 2);
-    height :1mm ;
+    height :7mm ;
     width: 80px;
-    padding-bottom: 5%;
-    line-break: auto;}
+    line-height: 25px;
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;}
 
-    h3{
-        padding-top: 2px;
-        padding-bottom: 2px;
+    h2{ font-size: xx-large;
+        text-align: center;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
+    }
+
+    h3{ font-size: xx-small;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: black !important;
     }
     
 .websiteStyle{ 
@@ -85,44 +107,56 @@ a{
 
 section { /* Visibly acknowlage each section of content provided */
     padding-bottom: 5px;
+    color: cornsilk;
 }
 
 button {
     color: aliceblue;
     background-color: darkslategray;
     bottom: 0;
+    text-align: center;
     
 }
 /* styling for different screen size */
-@media screen and (max-width : 409px) {   
-    
-     div {
-        border-style: double;
+@media screen and (max-width : 360px) {
+     main {
+        color: cornsilk;
+        width: 100%;
+        margin: auto;
         border-width: 1px;
-        font-size: smaller;};
-       .headerB {text-align: left;}
-       
-}
-
-@media screen and (max-width : 949px) {
-    div {
-       text-transform: capitalize;
-       font-size: large;};
-       .headerB {text-align: left;}
-       
-    }
-
-@media screen and (min-width : 950px) {
-    div {
-       border-style:hidden;
-       text-shadow: 2px;
+        font-size: smaller;
+        height: auto;
+        float: left !important;}
+        
+       #sideMenu{
+        position: relative;}
     }
     
-}
+
+@media screen and (max-width : 768px) {
+    body {
+       width: 100%;
+       text-transform: capitalize;
+       font-size: large;}
+    }
+
+@media screen and (min-width : 769px) {
+       body {
+           height: auto;
+           width: 100%;
+           text-shadow: 2px;
+           font-size:x-large;
+           margin: auto; }
+
+           section {
+            text-align: left;}
+    }
+       
 
 header{ 
     /* Top styling */
     padding-top: 4px;
+    padding-bottom: 4px;
     background-color: rgba(80, 35, 3, 0.411)!important;
     padding-bottom: 8px;
     border: black;
